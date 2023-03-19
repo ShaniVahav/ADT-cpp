@@ -20,7 +20,7 @@ PAdptArray CreateAdptArray(COPY_FUNC copy_func, DEL_FUNC del_func,PRINT_FUNC pri
     PAdptArray ptr = (PAdptArray) malloc(sizeof(struct AdptArray_));
      if (ptr == NULL) {
         printf("Memory not allocated.\n");
-        exit(0);
+        return NULL;
     }
 
     ptr->arr = NULL;
